@@ -49,7 +49,7 @@ export default function Home() {
         <Project name="Reshaped" href="https://reshaped.so">
           In my free time, I work on my own design system for React and Figma,
           where I handle both development and design. It provides complete
-          alginment between code and design, supports flexible theming and
+          alignment between code and design, supports flexible theming and
           composition features and uses the latest React and Figma capabilities.
           Here are a few component examples from it:
         </Project>
