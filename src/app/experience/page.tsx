@@ -45,8 +45,8 @@ const ExperiencePage = () => {
           roll-out of the global navigation patterns across 5 product verticals,
           built an mdx-based documentation website generator package on top of
           Next.js, created a local development environment for UI component
-          packages supporting React and, implemented a React component library
-          for building emails and more.
+          packages supporting React and Vue, implemented a React component
+          library for building emails and more.
         </Position>
 
         {/* 
