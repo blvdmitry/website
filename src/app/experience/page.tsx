@@ -42,10 +42,11 @@ const ExperiencePage = () => {
           <br />
           <br />
           As a few examples of the hands-on work I do: I&apos;ve worked on the
-          roll-out of the global navigation patterns across 5 of our verticals,
-          built a mdx based documentation tool on top of Next.js, created a
-          local development environment for components, implemented a React
-          component library for email clients and more.
+          roll-out of the global navigation patterns across 5 product verticals,
+          built an mdx-based documentation website generator package on top of
+          Next.js, created a local development environment for UI component
+          packages supporting React and, implemented a React component library
+          for building emails and more.
         </Position>
 
         {/* 
