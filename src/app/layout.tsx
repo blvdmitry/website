@@ -60,7 +60,7 @@ const Social = () => (
       variant="outline"
       elevated
       icon={BlueskyIcon}
-      href="https://bsky.app/profile/blvdmitry.bsky.social"
+      href="https://bsky.app/profile/blvdmitry.me"
       attributes={{ target: "_blank" }}
     >
       Bluesky
