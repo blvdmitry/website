@@ -1,6 +1,8 @@
 import Container from "@/components/Container";
 import { View, Text } from "reshaped";
 
+export const experimental_ppr = true;
+
 const Position = (props: {
   name: string;
   date: string;

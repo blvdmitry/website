@@ -3,6 +3,8 @@ import NextLink from "next/link";
 import Container from "@/components/Container";
 import { View, Text, Divider, Link } from "reshaped";
 
+export const experimental_ppr = true;
+
 const Post = (props: { href: string; name: string; side: string }) => {
   return (
     <View

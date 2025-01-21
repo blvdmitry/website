@@ -3,6 +3,8 @@ import Container from "@/components/Container";
 import ReshapedDemo from "@/components/ReshapedDemo";
 import ExternalLinkIcon from "@/icons/ExternalLink";
 
+export const experimental_ppr = true;
+
 const Project = (props: {
   name: string;
   acquiredYear?: number;
