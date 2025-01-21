@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   transpilePackages: ["reshaped"],
   experimental: {
     optimizePackageImports: ["reshaped"],
+    // ppr: "incremental",
   },
 };
 
