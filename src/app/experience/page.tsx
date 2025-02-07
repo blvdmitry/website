@@ -1,6 +1,6 @@
 import Container from "@/components/Container";
 import ImagePreview from "@/components/ImagePreview";
-import { View, Text, Image } from "reshaped";
+import { View, Text } from "reshaped";
 
 const Position = (props: {
   name: string;
