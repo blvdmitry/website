@@ -1,5 +1,6 @@
 import Container from "@/components/Container";
-import { View, Text } from "reshaped";
+import ImagePreview from "@/components/ImagePreview";
+import { View, Text, Image } from "reshaped";
 
 const Position = (props: {
   name: string;
@@ -17,7 +18,7 @@ const Position = (props: {
           {props.company}, {props.date}
         </Text>
       </View>
-      <Text variant="body-3" color="neutral-faded" as="p">
+      <Text variant="body-3" color="neutral-faded">
         {props.children}
       </Text>
     </View>
@@ -41,21 +42,49 @@ const ExperiencePage = () => {
           front-end direction for the department.
           <br />
           <br />
-          As a few examples of the hands-on work I do: I&apos;ve worked on the
-          roll-out of the global navigation patterns across 5 product verticals,
-          built an mdx-based documentation website generator package on top of
-          Next.js, created a local development environment for UI component
-          packages supporting React and Vue, implemented a React component
-          library for building emails and more.
+          I&apos;ve worked on the cross-platform design system used by 500+
+          engineers and designers, on the roll-out of the global navigation
+          patterns across 5 product verticals, built an mdx-based documentation
+          website generator package on top of Next.js, created a local
+          development environment for UI component packages supporting React and
+          Vue, implemented a React component library for building emails and
+          more. Here are a few more detailed examples:
+          <br />
+          <br />
+          <ImagePreview src="/img/examples/foundry.webp" />
+          <br />
+          <br />
+          <b>Foundry:</b> I&apos;ve built a component development enviornment
+          similar to Storybook that allowed us to test and document components
+          for the design system as well as components built by other teams. It
+          provides a vast set of features, such as component playground with
+          knobs, mdx based documentation, accessiility testing and search across
+          all component libraries using the tool. The hardest parts of the
+          project are the custom build process including AST metadata generation
+          and performance optimisations for the iframe rendering of the
+          component previews.
+          <br />
+          <br />
+          <ImagePreview src="/img/examples/manual.webp" />
+          <br />
+          <b>Manual:</b> Related to the previous tool, but focusing more on the
+          design audience, I&apos;ve built an MDX-based documentation website
+          generator. It&apos;s built on top of Next.js, leveraging React Server
+          Components for importing and formatting MDX and custom content and
+          built in a way to re-use its markdown rendering engine in other tools.
+          <br />
+          <br />
+          <ImagePreview src="/img/examples/assets.webp" />
+          <br />
+          <b>Asset service:</b> To provide a single source of truth for any
+          design related assets, I led the development of the Asset service,
+          which includes a storage for icons, illustrations, flags and fonts
+          used across all products. It comes with a web interface previewing
+          available assets, developer workflow to manage the asseets available
+          for product use, automatic pull request validation scripts and a
+          pipeline for automatic compilation and poublishing assets for all
+          supported platforms.
         </Position>
-
-        {/* 
-          TODO: Add case studies, examples:
-          - Global nav: Header / Searchbox
-          - Design System
-          - Tooling ecosystem
-          - Email library
-        */}
 
         <Position
           name="Senior Front-end Engineer"

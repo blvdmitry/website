@@ -1,0 +1,11 @@
+[data-rmiz-modal-overlay="visible"] {
+  background: #000;
+}
+
+[data-rmiz-modal] {
+  outline: none;
+}
+
+[data-rmiz-btn-unzoom] {
+  display: none;
+}

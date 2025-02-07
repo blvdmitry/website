@@ -10,8 +10,16 @@ const Navigation = () => {
   const router = useRouter();
 
   const handleChange: TabsProps["onChange"] = (args) => {
-    router.push(args.value, { scroll: false });
-    setValue(args.value);
+    if (document.documentElement.scrollTop > 0) {
+      document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+      setTimeout(() => {
+        router.push(args.value, { scroll: false });
+        setValue(args.value);
+      }, 400);
+    } else {
+      router.push(args.value, { scroll: false });
+      setValue(args.value);
+    }
   };
 
   return (
