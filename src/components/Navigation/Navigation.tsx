@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { Tabs, TabsProps } from "reshaped";
 
@@ -21,6 +21,11 @@ const Navigation = () => {
       setValue(args.value);
     }
   };
+
+  useEffect(() => {
+    router.prefetch("/experience");
+    router.prefetch("/public");
+  });
 
   return (
     <Tabs value={value} onChange={handleChange} variant="borderless">
