@@ -1,8 +1,11 @@
+const { baseThemeDefinition } = require("reshaped/themes")
+
 /** @type {import('reshaped').ReshapedConfig} */
 const config = {
   themes: {
     website: {
       color: {
+        ...baseThemeDefinition.color,
         backgroundPage: { hex: "#212121" },
         backgroundPageFaded: { hex: "#252525" },
         foregroundNeutralFaded: { hex: "#c7c7c7" },

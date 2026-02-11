@@ -29,10 +29,16 @@ const ExperiencePage = () => {
   return (
     <Container>
       <View gap={16}>
+        <Position name="Staff Engineer" company="Shopify" date="2025 – now">
+          Working on Sidekick and assistants front-end, this guy: 
+          <br />
+          <br />
+          <ImagePreview src="https://pbs.twimg.com/media/G70r6CyX0AAPTQX?format=jpg&name=4096x4096" />
+          </Position>
         <Position
           name="Principal Front-end Engineer"
           company="Booking.com"
-          date="2018 – now"
+          date="2018 – 2025"
         >
           As one of the first engineers in the UX Foundations area, I&apos;ve
           been responsible for building and scaling our design system and tools

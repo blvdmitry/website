@@ -43,8 +43,7 @@ const About = () => (
       Dmitry Belyaev
     </Text>
     <Text variant="body-3" color="neutral-faded" as="p" wrap="balance">
-      I&apos;m a principal front-end engineer based in Amsterdam, working on
-      design system and web platform at Booking.com.
+      I&apos;m a staff engineer based in Amsterdam, working on Sidekick at Shopify.
     </Text>
     <Text variant="body-3" color="neutral-faded" as="p" wrap="balance">
       My passion lies in building user interfaces and design/developer tools,
@@ -59,20 +58,11 @@ const Social = () => (
     <Button
       variant="outline"
       elevated
-      icon={BlueskyIcon}
-      href="https://bsky.app/profile/blvdmitry.me"
-      attributes={{ target: "_blank" }}
-    >
-      Bluesky
-    </Button>
-    <Button
-      variant="outline"
-      elevated
       icon={XIcon}
       href="https://x.com/blvdmitry"
       attributes={{ target: "_blank" }}
     >
-      Twitter / X
+      Twitter
     </Button>
     <Button
       variant="outline"
@@ -83,12 +73,12 @@ const Social = () => (
     >
       GitHub
     </Button>
-    <Hidden hide={{ s: true, m: false }}>
+    {/* <Hidden hide={{ s: true, m: false }}>
       <View.Item grow>
         <Divider />
       </View.Item>
-    </Hidden>
-    <Button
+    </Hidden> */}
+    {/* <Button
       variant="outline"
       elevated
       endIcon={ExternalLinkIcon}
@@ -96,7 +86,7 @@ const Social = () => (
       attributes={{ target: "_blank" }}
     >
       How I work
-    </Button>
+    </Button> */}
   </View>
 );
 
@@ -114,7 +104,7 @@ export default function RootLayout({
     >
       <body>
         <App>
-          <View minHeight="100%" overflow="hidden">
+          <View minHeight="100dvh" overflow="hidden">
             <Container>
               <View paddingTop={12} gap={10}>
                 <About />

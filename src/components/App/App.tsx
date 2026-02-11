@@ -2,11 +2,11 @@
 
 import type { ReactNode } from "react";
 import { Reshaped } from "reshaped";
-import "@/themes/website/theme.css";
+import "reshaped/themes/slate/theme.css";
 
 const App = ({ children }: { children: ReactNode }) => {
   return (
-    <Reshaped theme="website" defaultColorMode="dark">
+    <Reshaped theme="slate" defaultColorMode="dark">
       {children}
     </Reshaped>
   );
