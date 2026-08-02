@@ -11,14 +11,14 @@ const Position = (props: {
   return (
     <View gap={2}>
       <View direction="row" justify="space-between" gap={2} align="baseline">
-        <Text variant="body-3" weight="medium">
+        <Text variant="body-2" weight="medium">
           {props.name}
         </Text>
         <Text variant="caption-1" color="neutral-faded">
           {props.company}, {props.date}
         </Text>
       </View>
-      <Text variant="body-3" color="neutral-faded">
+      <Text variant="body-2" color="neutral-faded">
         {props.children}
       </Text>
     </View>
@@ -33,7 +33,11 @@ const ExperiencePage = () => {
           Working on Sidekick and assistants front-end, this guy: 
           <br />
           <br />
-          <ImagePreview src="https://pbs.twimg.com/media/G70r6CyX0AAPTQX?format=jpg&name=4096x4096" />
+          <ImagePreview
+            src="https://pbs.twimg.com/media/G70r6CyX0AAPTQX?format=jpg&name=4096x4096"
+            width={2118}
+            height={742}
+          />
           </Position>
         <Position
           name="Principal Front-end Engineer"
@@ -57,7 +61,11 @@ const ExperiencePage = () => {
           more. Here are a few more detailed examples:
           <br />
           <br />
-          <ImagePreview src="/img/examples/foundry.webp" />
+          <ImagePreview
+            src="/img/examples/foundry.webp"
+            width={2800}
+            height={1592}
+          />
           <br />
           <br />
           <b>Foundry:</b> I&apos;ve built a component development enviornment
@@ -71,7 +79,11 @@ const ExperiencePage = () => {
           component previews.
           <br />
           <br />
-          <ImagePreview src="/img/examples/manual.webp" />
+          <ImagePreview
+            src="/img/examples/manual.webp"
+            width={4032}
+            height={2292}
+          />
           <br />
           <b>Manual:</b> Related to the previous tool, but focusing more on the
           design audience, I&apos;ve built an MDX-based documentation website
@@ -80,7 +92,11 @@ const ExperiencePage = () => {
           built in a way to re-use its markdown rendering engine in other tools.
           <br />
           <br />
-          <ImagePreview src="/img/examples/assets.webp" />
+          <ImagePreview
+            src="/img/examples/assets.webp"
+            width={2800}
+            height={1592}
+          />
           <br />
           <b>Asset service:</b> To provide a single source of truth for any
           design related assets, I led the development of the Asset service,

@@ -13,7 +13,7 @@ const Project = (props: {
     <View gap={2}>
       <View direction="row" justify="space-between" gap={4} align="center">
         <View gap={2} align="baseline" direction="row">
-          <Text variant="body-3" weight="medium">
+          <Text variant="body-2" weight="medium">
             {props.name}
           </Text>
           {props.acquiredYear && (
@@ -35,7 +35,7 @@ const Project = (props: {
           </Button>
         </Button.Aligner>
       </View>
-      <Text variant="body-3" color="neutral-faded" as="p">
+      <Text variant="body-2" color="neutral-faded" as="p">
         {props.children}
       </Text>
     </View>

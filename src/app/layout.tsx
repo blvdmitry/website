@@ -1,14 +1,12 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
-import { Button, Divider, Hidden, View, Text } from "reshaped";
+import { Button, View, Text } from "reshaped";
 import App from "@/components/App";
 import Navigation from "@/components/Navigation";
 import "./tailwind.css";
 import Container from "@/components/Container";
-import BlueskyIcon from "@/icons/Bluesky";
 import XIcon from "@/icons/X";
 import GithubIcon from "@/icons/Github";
-import ExternalLinkIcon from "@/icons/ExternalLink";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const inter = Inter({
@@ -16,12 +14,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Dmitry Belyaev",
+  title: "Dima Belyaev",
   description:
     "My passion lies in building user interfaces and design/developer tools, while making their complexity invisible through great developer and user experiences.",
   metadataBase: new URL("https://blvdmitry.me"),
   openGraph: {
-    siteName: "Dmitry Belyaev",
+    siteName: "Dima Belyaev",
     url: "https://blvdmitry.me",
     locale: "en-US",
     type: "website",
@@ -39,13 +37,13 @@ export const viewport: Viewport = {
 
 const About = () => (
   <View gap={3}>
-    <Text variant="body-2" weight="medium" as="h1">
-      Dmitry Belyaev
+    <Text variant="body-1" weight="medium" as="h1">
+      Hey, I'm Dima 👋
     </Text>
-    <Text variant="body-3" color="neutral-faded" as="p" wrap="balance">
+    <Text variant="body-2" color="neutral-faded" as="p" wrap="balance">
       I&apos;m a staff engineer based in Amsterdam, working on Sidekick at Shopify.
     </Text>
-    <Text variant="body-3" color="neutral-faded" as="p" wrap="balance">
+    <Text variant="body-2" color="neutral-faded" as="p" wrap="balance">
       My passion lies in building user interfaces and design/developer tools,
       while making their complexity invisible through great developer and user
       experiences.
@@ -57,22 +55,18 @@ const Social = () => (
   <View gap={2} direction="row" align="center" wrap>
     <Button
       variant="outline"
-      elevated
+      raised
       icon={XIcon}
       href="https://x.com/blvdmitry"
       attributes={{ target: "_blank" }}
-    >
-      Twitter
-    </Button>
+    />
     <Button
       variant="outline"
-      elevated
+      raised
       icon={GithubIcon}
       href="https://github.com/blvdmitry"
       attributes={{ target: "_blank" }}
-    >
-      GitHub
-    </Button>
+    />
     {/* <Hidden hide={{ s: true, m: false }}>
       <View.Item grow>
         <Divider />
@@ -80,7 +74,7 @@ const Social = () => (
     </Hidden> */}
     {/* <Button
       variant="outline"
-      elevated
+      raised
       endIcon={ExternalLinkIcon}
       href="https://read.cv/blvdmitry/how-i-work"
       attributes={{ target: "_blank" }}
@@ -98,7 +92,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      data-rs-theme="website"
+      data-rs-theme="slate"
       data-rs-color-mode="dark"
       suppressHydrationWarning
     >

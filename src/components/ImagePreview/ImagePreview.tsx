@@ -10,12 +10,21 @@ import "./ImagePreview.css";
 
 type Props = {
   src: string;
+  /** Intrinsic image size, used to reserve the space before the image loads */
+  width: number;
+  height: number;
 };
 
 const ImagePreview = (props: Props) => {
   return (
     <Zoom>
-      <Image alt="" src={props.src} borderRadius="medium" />
+      <Image
+        alt=""
+        src={props.src}
+        borderRadius="medium"
+        width="100%"
+        aspectRatio={props.width / props.height}
+      />
     </Zoom>
   );
 };

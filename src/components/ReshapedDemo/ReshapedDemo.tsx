@@ -15,7 +15,7 @@ import {
   Badge,
   Calendar,
 } from "reshaped";
-import { getThemeCSS, generateThemeColors } from "reshaped/themes";
+import { getThemeCSS, generateThemeColors } from "@reshaped/theming";
 
 let counter = 0;
 
@@ -56,7 +56,6 @@ const ToastDemo = () => {
               counter % 2
                 ? "You've clicked a button. Wanna do it again?"
                 : "Notifications can take multiple lines and stacking will still work just fine.",
-            color: "inverted",
           });
         }}
       >
@@ -88,7 +87,7 @@ const FocusDemo = () => {
         size="500px"
         onClose={modalToggle.deactivate}
         active={modalToggle.active}
-        padding={6}
+        padding={5}
       >
         <View gap={4}>
           <View gap={2}>
@@ -222,7 +221,7 @@ const ReshapedDemo = () => {
       </View.Item>
       <View.Item columns={12}>
         <DemoBlock title="Calendar with keyboard navigation">
-          <View maxWidth="320px">
+          <View maxWidth="320px" height="250px">
             <Calendar range />
           </View>
         </DemoBlock>
