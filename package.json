@@ -9,11 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@reshaped/theming": "4.1.0",
+    "@reshaped/theming": "4.3.0",
     "next": "16.1.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "reshaped": "4.1.0",
+    "reshaped": "4.3.0",
     "react-medium-image-zoom": "5.4.0"
   },
   "devDependencies": {
